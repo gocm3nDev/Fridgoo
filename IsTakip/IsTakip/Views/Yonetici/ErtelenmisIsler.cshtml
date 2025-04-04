@@ -1,0 +1,51 @@
+﻿@using IsTakip.Models
+@model List<TBL_ISLER>
+
+@{
+    ViewBag.Title = "ErtelenmisIsler";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<br />
+<h2>Ertelenmiş İşler</h2>
+<br />
+
+<br />
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Ad-Soyad</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>Adres</th>
+        <th>Müşteri Telefon</th>
+        <th>İletilen Tarih</th>
+        <th>Durum</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        if (item.isDurumID == 3)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.musteriAdSoyad</td>
+                <td>@item.isinBasligi</td>
+                <td>@item.isinAciklamasi</td>
+                <td>@item.musteriAdresi</td>
+                <td>@item.musteriTel</td>
+                <td>@item.iletilenTarih.ToString("dd MMMM yyyy hh:mm")</td>
+                <td>Ertelenmiş</td>
+                <td>
+                    <form action="/Yonetici/Sil/@item.ID" method="post" style="display:inline">
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i> Sil
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    }
+</table>
+<br />
+

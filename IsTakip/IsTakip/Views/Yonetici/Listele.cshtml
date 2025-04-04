@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Listele";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="mb-3">
+        <h3>@ViewBag.personel.personelAdSoyad</h3>
+        @using (Html.BeginForm("Listele", "Yonetici", FormMethod.Post))
+        {
+            <select class="form-select">
+                <option value="musteriAdSoyad">Ad-Soyada göre</option>
+                <option value="musteriTel">Telefon numarasına göre</option>
+                <option value="musteriAdres">Adrese göre</option>
+                <option value="ID">ID numarasına göre</option>
+                <option value="iletilenTarih">Tarihe göre</option>
+            </select><p> arama yap</p>
+            <div class="container mt-5">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ara..." aria-label="Ara" aria-describedby="search-button">
+                    <button class="btn btn-primary" type="submit" id="search-button">Ara</button>
+                </div>
+            </div>
+        }
+    </div>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Ad-Soyad</th>
+            <th>Başlık</th>
+            <th>Açıklama</th>
+            <th>Adres</th>
+            <th>Müşteri Telefon</th>
+            <th>İletilen Tarih</th>
+            <th>Durum</th>
+            <th>İşi Bitir</th>
+            <th>İşi Ertele</th>
+        </tr>
+        @foreach (var item in ViewBag.isler)
+        {
+            if (item.isDurumID == 4)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.musteriAdSoyad</td>
+                    <td>@item.isinBasligi</td>
+                    <td>@item.isinAciklamasi</td>
+                    <td>@item.musteriAdresi</td>
+                    <td>@item.musteriTel</td>
+                    <td>@item.iletilenTarih.ToString("dd MMMM yyyy hh:mm")</td>
+                    @if (item.isDurumID == 4)
+                    {
+                        <td>Yapılacak</td>
+                    }
+                    <td>
+                        <a href="/Yonetici/IsiBitir/@item.ID" class="btn btn-success">
+                            İşi Bitir
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/Yonetici/Ertele/@item.ID" class="btn btn-info">Ertele</a>
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+

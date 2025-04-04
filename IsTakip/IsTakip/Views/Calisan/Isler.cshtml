@@ -1,0 +1,50 @@
+﻿@model IsTakip.Models.TBL_ISLER
+
+@{
+    ViewBag.Title = "Isler";
+    Layout = "~/Views/Shared/_LayoutCalisan.cshtml";
+}
+
+<br />
+<h2 class="text-center">Aktif İşler</h2>
+<br />
+
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>#</th>
+            <th>Ad-Soyad</th>
+            <th>Başlık</th>
+            <th>Açıklama</th>
+            <th>Adres</th>
+            <th>Telefon</th>
+            <th>Tarih</th>
+            <th>Bitir</th>
+            <th>Ertele</th>
+        </tr>
+        @foreach (var x in ViewBag.isler)
+        {
+            <tr>
+                <td>@x.ID</td>
+                <td>@x.musteriAdSoyad</td>
+                <td>@x.isinBasligi</td>
+                <td>@x.isinAciklamasi</td>
+                <td>@x.musteriAdresi</td>
+                <td>@x.musteriTel</td>
+                <td>@x.iletilenTarih</td>
+                <td>
+                    <a href="/Calisan/Bitir/@x.ID" class="btn btn-success">
+                        <i class="fas fa-check"></i> Bitir
+                    </a>
+                </td>
+                <td>
+                    <form action="/Calisan/Ertele/@x.ID" method="post">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-sync-alt"></i> Ertele
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

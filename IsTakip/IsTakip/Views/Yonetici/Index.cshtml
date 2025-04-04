@@ -1,0 +1,59 @@
+﻿@model List<IsTakip.Models.MusteriViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<br />
+<div class="container">
+    <div class="row">
+        <!-- İlk Kutu: İstatistikler -->
+        <div class="col-md-5 text-center container-fluid">
+            <h2>İstatistikler</h2>
+
+            <div class="card" style="width: 520px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5 text-center">
+                            <p><b>Geçmiş iş sayısı: @ViewBag.gecmisSayisi</b></p>
+                            <p><b>Toplam ciro: @ViewBag.toplamCiro₺</b></p>
+                            <p><b>Ortalama iş tamamlama süresi: @ViewBag.ortSure saat</b></p>
+                        </div>
+                        <div class="col-md-5 text-center ms-auto">
+                            <p><b>Toplam işçi sayısı: @ViewBag.isciSayisi</b></p>
+                            <p><b>Aktif iş sayısı: @ViewBag.aktifSayi</b></p>
+                            <p><b>Ertelenmiş iş sayısı: @ViewBag.ertelenmisSayi</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- İkinci Kutu: Başarılı Son 3 İş -->
+        <div class="col-md-6 ms-auto container-fluid">
+            <h2 class="text-center">Başarılı Son 3 İş</h2>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Ad-Soyad</th>
+                        <th>Adres</th>
+                        <th>Telefon</th>
+                        <th>Eleman</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var x in Model)
+                    {
+                        <tr>
+                            <td>@x.MusteriAdSoyad</td>
+                            <td>@x.MusteriAdres</td>
+                            <td>@x.MusteriTel</td>
+                            <td>@x.PersonelAdSoyad</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

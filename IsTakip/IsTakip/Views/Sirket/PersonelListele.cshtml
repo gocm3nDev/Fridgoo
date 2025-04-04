@@ -1,0 +1,81 @@
+﻿@model IsTakip.Models.PersonelViewModel
+
+@{
+    ViewBag.Title = "PersonelListele";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<h2 class="text-center">Personel Listesi</h2>
+<br />
+
+<div class="container">
+    <p><i style="user-select: none; font-size: 12px">Dikkat! Bu sekmede yapacağınız işlemlerin geri dönüşü olmayacaktır.</i></p>
+    <div class="row">
+        <div class="col-5">
+            <h4 class="text-center">Yönetici Listesi</h4>
+
+            <table class="table">
+                <tr>
+                    <th>#</th>
+                    <th>Ad-Soyad</th>
+                    <th>Kullanıcı Adı</th>
+                    <th>Şifre</th>
+                    <th>Sil</th>
+                    <th>Düzenle</th>
+                </tr>
+                @foreach (var x in Model.Yoneticiler)
+                {
+                    <tr>
+                        <td>@x.ID</td>
+                        <td>@x.personelAdSoyad</td>
+                        <td>@x.personelUsername</td>
+                        <td>@x.personelPasswd</td>
+                        <td>
+                            <form action="/Sirket/PersonelSil/@x.ID" method="post">
+                                <button type="submit" class="btn btn-danger">Sil</button>
+                            </form>
+                        </td>
+                        <td>
+                            <a href="/Sirket/PersonelDuzenle/@x.ID" class="btn btn-warning">Düzenle</a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="col-5 ms-auto">
+            <h4 class="text-center">Personel Listesi</h4>
+            <table class="table">
+                <tr>
+                    <th>#</th>
+                    <th>Ad-Soyad</th>
+                    <th>Kullanıcı Adı</th>
+                    <th>Şifre</th>
+                    <th>Sil</th>
+                    <th>Düzenle</th>
+                </tr>
+                @foreach (var x in Model.Personeller)
+                {
+                    <tr>
+                        <td>@x.ID</td>
+                        <td>@x.personelAdSoyad</td>
+                        <td>@x.personelUsername</td>
+                        <td>@x.personelPasswd</td>
+                        <td>
+                            <form action="/Sirket/PersonelSil/@x.ID" method="post">
+                                <button type="submit" class="btn btn-danger">Sil</button>
+                            </form>
+                        </td>
+                        <td>
+                            <a href="/Sirket/PersonelDuzenle/@x.ID" class="btn btn-warning">Düzenle</a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+
+    <form action="/Sirket/PersonelEkle/" method="get">
+        <button class="btn btn-primary">Personel Ekle</button>
+    </form>
+
+</div>

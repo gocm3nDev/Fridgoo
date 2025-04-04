@@ -1,0 +1,44 @@
+﻿@model IsTakip.Models.TBL_MESAJLAR
+
+
+@{
+    ViewBag.Title = "MesajGonder";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+@using (Html.BeginForm("MesajGonder", "Sirket", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <h2 class="text-center">Çalışanlara Mesaj Gönder</h2>
+    <br />
+
+    @Html.LabelFor(x => x.Header, "Mesaj başlığı")
+    @Html.TextBoxFor(x => x.Header, new { @class = "form-control" })
+    <br />
+
+    @Html.LabelFor(x => x.Context, "Mesaj")
+    @Html.TextBoxFor(x => x.Context, new { @class = "form-control" })
+    <br />
+
+    if (ViewBag.personel == null)
+    {
+        <option>Personel listesi bulunamadı.</option>
+    }
+    else
+    {
+        <select class="form-select" name="PersonelID">
+            <option value="0">Tüm personeller</option>
+            @foreach (var x in ViewBag.personel)
+            {
+                <option value="@x.ID">@x.personelAdSoyad</option>
+            }
+        </select>
+    }
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">Gönder</button>
+}
+
+

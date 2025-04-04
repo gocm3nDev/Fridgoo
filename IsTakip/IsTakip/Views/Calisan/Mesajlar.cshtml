@@ -1,0 +1,41 @@
+﻿@using IsTakip.Models
+@model List<TBL_MESAJLAR>
+
+@{
+    ViewBag.Title = "Mesajlar";
+    Layout = "~/Views/Shared/_LayoutCalisan.cshtml";
+}
+
+<h2 class="text-center mt-3">Mesajlar</h2>
+
+<div class="container">
+    <div class="row">
+        @foreach (var x in Model)
+        {
+            <div class="card mb-2 me-xl-auto mt-5 col-5">
+                <div class="card-body">
+                    <div class="card w-100 border-3">
+                        <h5 class="card-title text-center m-2"><b>@x.Header</b></h5>
+                    </div>
+                    <h6 class="card-subtitle mt-2 mb-2 text-muted">Gönderen: @x.Sender</h6>
+                    <p class="card-text mt-4">Mesaj</p>
+                    <div class="card w-100">
+                        <p class="card-text m-2">@x.Context</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p class="card-text mt-3"><small class="text-muted" style="user-select:none"><i>Gönderi zamanı: @x.SendTime</i></small></p>
+                        </div>
+                        <div class="col-3">
+                            <form action="/Calisan/MesajSil/@x.ID" method="post">
+                                <button type="submit" class="btn btn-success mt-2 me-5">
+                                    Okundu
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

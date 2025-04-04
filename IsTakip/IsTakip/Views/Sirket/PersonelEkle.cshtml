@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "PersonelEkle";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<h2 class="text-center">Personel Ekle</h2>
+
+<br />
+
+<form method="post">
+    <input type="text" class="form-control" name="personelAdSoyad" placeholder="Personel adını girin" required/>
+    <br />
+    <input type="text" class="form-control" name="personelUsername" placeholder="Personel kullanıcı adını girin" required/>
+    <br />
+    <input type="text" class="form-control" name="personelPasswd" placeholder="Personel şifresini girin" required/>
+    <br />
+    <label>Personel yetkilendirme</label> <br />
+    <input type="radio" class="form" name="personelYetkiID" value="1" checked />Yönetici <br />
+    <input type="radio" class="form" name="personelYetkiID" value="2" />Çalışan
+    <br />
+    <label>Personel birimi</label> <br />
+    <input type="radio" class="form" name="personelBirimID" value="1" checked /> Yönetim <br />
+    <input type="radio" class="form" name="personelBirimID" value="2" /> Tamir ve Bakım <br />
+    <input type="radio" class="form" name="personelBirimID" value="3" /> Atölye
+    <br />
+    <button class="btn btn-primary">Personeli Kaydet</button>
+</form>

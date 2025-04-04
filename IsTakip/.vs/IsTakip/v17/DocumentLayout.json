@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Efe\\Desktop\\IsTakip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|c:\\users\\efe\\desktop\\istakip\\istakip\\js_files\\getaddress.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\js_files\\getaddress.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|c:\\users\\efe\\desktop\\istakip\\istakip\\controllers\\adrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\controllers\\adrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|c:\\users\\efe\\desktop\\istakip\\istakip\\views\\calisan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\calisan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\controllers\\calisancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\controllers\\calisancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\shared\\_layoutcalisan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\shared\\_layoutcalisan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|c:\\users\\efe\\desktop\\istakip\\istakip\\controllers\\yoneticicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\controllers\\yoneticicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\sirket\\personellistele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\sirket\\personellistele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\controllers\\sirketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\controllers\\sirketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\models\\mesajviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\models\\mesajviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\sirket\\mesajlistele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\sirket\\mesajlistele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\yonetici\\takip.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\yonetici\\takip.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\sirket\\mesajgonder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\sirket\\mesajgonder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\calisan\\mesajlar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\calisan\\mesajlar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\yonetici\\ata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\yonetici\\ata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\shared\\_layoutyonetici.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\shared\\_layoutyonetici.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\sirket\\personelekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\sirket\\personelekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\yonetici\\gecmis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\yonetici\\gecmis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|C:\\Users\\Efe\\Desktop\\IsTakip\\istakip\\views\\sirket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41134F4E-979F-4E4C-ADBB-EC2DC3DBFD32}|IsTakip\\IsTakip.csproj|solutionrelative:istakip\\views\\sirket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Calisan\\Index.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Calisan\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Calisan\\Index.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Calisan\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T15:40:16.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdresController.cs",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\AdresController.cs",
+              "RelativeDocumentMoniker": "IsTakip\\Controllers\\AdresController.cs",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\AdresController.cs",
+              "RelativeToolTip": "IsTakip\\Controllers\\AdresController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T15:18:18.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "getAddress.js",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\JS_Files\\getAddress.js",
+              "RelativeDocumentMoniker": "IsTakip\\JS_Files\\getAddress.js",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\JS_Files\\getAddress.js",
+              "RelativeToolTip": "IsTakip\\JS_Files\\getAddress.js",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-04T15:08:58.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MesajViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Models\\MesajViewModel.cs",
+              "RelativeDocumentMoniker": "IsTakip\\Models\\MesajViewModel.cs",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Models\\MesajViewModel.cs",
+              "RelativeToolTip": "IsTakip\\Models\\MesajViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:41:01.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Takip.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Yonetici\\Takip.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Yonetici\\Takip.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Yonetici\\Takip.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Yonetici\\Takip.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T21:32:07.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Mesajlar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Calisan\\Mesajlar.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Calisan\\Mesajlar.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Calisan\\Mesajlar.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Calisan\\Mesajlar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T15:58:34.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Ata.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Yonetici\\Ata.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Yonetici\\Ata.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Yonetici\\Ata.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Yonetici\\Ata.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T15:41:17.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CalisanController.cs",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\CalisanController.cs",
+              "RelativeDocumentMoniker": "IsTakip\\Controllers\\CalisanController.cs",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\CalisanController.cs",
+              "RelativeToolTip": "IsTakip\\Controllers\\CalisanController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T22:59:18.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "YoneticiController.cs",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\YoneticiController.cs",
+              "RelativeDocumentMoniker": "IsTakip\\Controllers\\YoneticiController.cs",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\YoneticiController.cs",
+              "RelativeToolTip": "IsTakip\\Controllers\\YoneticiController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAuwFQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T16:42:26.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "IsTakip\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "IsTakip\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:43:08.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SirketController.cs",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\SirketController.cs",
+              "RelativeDocumentMoniker": "IsTakip\\Controllers\\SirketController.cs",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Controllers\\SirketController.cs",
+              "RelativeToolTip": "IsTakip\\Controllers\\SirketController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAA0BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T15:45:25.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_LayoutCalisan.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Shared\\_LayoutCalisan.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Shared\\_LayoutCalisan.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Shared\\_LayoutCalisan.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Shared\\_LayoutCalisan.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T21:47:07.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PersonelListele.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\PersonelListele.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Sirket\\PersonelListele.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\PersonelListele.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Sirket\\PersonelListele.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T13:08:03.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MesajListele.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\MesajListele.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Sirket\\MesajListele.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\MesajListele.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Sirket\\MesajListele.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T01:40:52.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MesajGonder.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\MesajGonder.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Sirket\\MesajGonder.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\MesajGonder.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Sirket\\MesajGonder.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T00:24:44.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_LayoutYonetici.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Shared\\_LayoutYonetici.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Shared\\_LayoutYonetici.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Shared\\_LayoutYonetici.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Shared\\_LayoutYonetici.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T21:33:35.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PersonelEkle.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\PersonelEkle.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Sirket\\PersonelEkle.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\PersonelEkle.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Sirket\\PersonelEkle.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-13T19:10:32.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\Index.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Sirket\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Sirket\\Index.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Sirket\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T11:59:20.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Gecmis.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Yonetici\\Gecmis.cshtml",
+              "RelativeDocumentMoniker": "IsTakip\\Views\\Yonetici\\Gecmis.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\IsTakip\\IsTakip\\Views\\Yonetici\\Gecmis.cshtml",
+              "RelativeToolTip": "IsTakip\\Views\\Yonetici\\Gecmis.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T10:56:35.881Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

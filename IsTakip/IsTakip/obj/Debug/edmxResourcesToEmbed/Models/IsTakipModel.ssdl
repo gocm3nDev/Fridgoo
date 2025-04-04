@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbIsTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TBL_BIRIMLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="birimAd" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_DURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="durumAd" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_ISLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="musteriAdSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="isinAciklamasi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="isinBasligi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="musteriAdresi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="kullanilanMalzeme" Type="nvarchar(max)" />
+    <Property Name="malzemeFiyat" Type="int" />
+    <Property Name="kdvOran" Type="int" />
+    <Property Name="totalFiyat" Type="int" />
+    <Property Name="iletilenTarih" Type="datetime" Nullable="false" />
+    <Property Name="yapilanTarih" Type="datetime" />
+    <Property Name="isDurumID" Type="int" Nullable="false" />
+    <Property Name="isPersonelID" Type="int" Nullable="false" />
+    <Property Name="musteriTel" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_PERSON">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="personelAdSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="personelUsername" Type="nvarchar" MaxLength="20" />
+    <Property Name="personelPasswd" Type="nvarchar" MaxLength="20" />
+    <Property Name="personelBirimID" Type="int" />
+    <Property Name="personelYetkiID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBL_YETKILER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="yetkiAd" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_TBL_ISLER_TBL_PERSON">
+    <End Role="TBL_PERSON" Type="Self.TBL_PERSON" Multiplicity="1" />
+    <End Role="TBL_ISLER" Type="Self.TBL_ISLER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_PERSON">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_ISLER">
+        <PropertyRef Name="isPersonelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_PERSON_TBL_BIRIMLER">
+    <End Role="TBL_BIRIMLER" Type="Self.TBL_BIRIMLER" Multiplicity="0..1" />
+    <End Role="TBL_PERSON" Type="Self.TBL_PERSON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_BIRIMLER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_PERSON">
+        <PropertyRef Name="personelBirimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_PERSON_TBL_YETKILER">
+    <End Role="TBL_YETKILER" Type="Self.TBL_YETKILER" Multiplicity="0..1" />
+    <End Role="TBL_PERSON" Type="Self.TBL_PERSON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_YETKILER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_PERSON">
+        <PropertyRef Name="personelYetkiID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DbIsTakipModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_BIRIMLER" EntityType="Self.TBL_BIRIMLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_DURUM" EntityType="Self.TBL_DURUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_ISLER" EntityType="Self.TBL_ISLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_PERSON" EntityType="Self.TBL_PERSON" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_YETKILER" EntityType="Self.TBL_YETKILER" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TBL_ISLER_TBL_PERSON" Association="Self.FK_TBL_ISLER_TBL_PERSON">
+      <End Role="TBL_PERSON" EntitySet="TBL_PERSON" />
+      <End Role="TBL_ISLER" EntitySet="TBL_ISLER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_PERSON_TBL_BIRIMLER" Association="Self.FK_TBL_PERSON_TBL_BIRIMLER">
+      <End Role="TBL_BIRIMLER" EntitySet="TBL_BIRIMLER" />
+      <End Role="TBL_PERSON" EntitySet="TBL_PERSON" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_PERSON_TBL_YETKILER" Association="Self.FK_TBL_PERSON_TBL_YETKILER">
+      <End Role="TBL_YETKILER" EntitySet="TBL_YETKILER" />
+      <End Role="TBL_PERSON" EntitySet="TBL_PERSON" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

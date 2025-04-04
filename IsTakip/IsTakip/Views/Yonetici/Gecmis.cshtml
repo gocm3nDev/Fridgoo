@@ -1,0 +1,78 @@
+﻿@using IsTakip.Models
+@model List<TBL_ISLER>
+
+@{
+    ViewBag.Title = "Gecmis";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<br />
+<h2>Geçmiş İşler</h2>
+<br />
+
+<div class="mb-3">
+    @using (Html.BeginForm("Gecmis", "Yonetici", FormMethod.Post))
+    {
+        <div class="container mt-4">
+            <div>
+                <input type="radio" name="filterRadio" value="ada" checked /> Ad-Soyada göre filtrele &nbsp;
+                <input type="radio" name="filterRadio" value="adrese" /> Adrese göre filtrele &nbsp;
+                <input type="radio" name="filterRadio" value="tele" /> Telefon numarasına göre filtrele
+            </div><br />
+
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Ara..." aria-label="Ara" aria-describedby="search-button" name="filter">
+                <button class="btn btn-primary" type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    }
+</div>
+
+<br />
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Ad-Soyad</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>Adres</th>
+        <th>Müşteri Telefon</th>
+        <th>İletilen Tarih</th>
+        <th>Bitirilen Tarih</th>
+        <th>Durum</th>
+        <th>Fatura</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        if (item.isDurumID == 1)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.musteriAdSoyad</td>
+                <td>@item.isinBasligi</td>
+                <td>@item.isinAciklamasi</td>
+                <td>@item.musteriAdresi</td>
+                <td>@item.musteriTel</td>
+                <td>@item.iletilenTarih.ToString("dd MMMM yyyy hh:mm")</td>
+                <td>@(item.yapilanTarih.HasValue ? item.yapilanTarih.Value.ToString("dd MMMM yyyy HH:mm") : "Tarih Yok")</td>
+                <td>Başarılı</td>
+                <td>
+                    <a style="text-decoration:none; color:black" href="/Yonetici/GecmisGoruntule/@item.ID">
+                        <i class="fa-solid fa-file"></i>
+                        Fatura
+                    </a>
+                </td>
+                <td>
+                    <form action="/Yonetici/Sil/@item.ID" method="post" style="display:inline">
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i> Sil
+                        </button>
+                    </form>
+            </tr>
+        }
+
+    }
+</table>
+<br />
