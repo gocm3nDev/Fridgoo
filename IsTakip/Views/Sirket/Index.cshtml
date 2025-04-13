@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<h2 class="text-center">Şirket Yönetim Sistemi</h2>
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="card col-4" style="width: 520px;margin-left: 20px ;border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+            <div class="card-body">
+                <div>
+                    <h5 class="text-center">Personel Yönetimi</h5>
+                    <br />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5">
+                                <a href="/Sirket/PersonelListele/" class="btn btn-primary" style="width:150px">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    Personeller
+                                </a>
+                                <a href="#" class="btn btn-primary mt-2" style="width:150px">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    Çalışan istatistikleri
+                                </a>
+                            </div>
+                            <div class="col-5 ms-auto">
+                                <a href="/Sirket/MesajListele/" class="btn btn-primary" style="width:150px">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    Mesajlar
+                                </a>
+                                <a href="/Sirket/MesajGonder/" class="btn btn-primary mt-2" style="width:150px">
+                                    <i class="fa-regular fa-message"></i>
+                                    Çalışanlara ileti gönder
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-4 ms-auto" style="width: 520px;margin-right: 20px ;border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+            <div class="card-body">
+                <div>
+                    <h5 class="text-center">Gelir-Gider Takibi</h5>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

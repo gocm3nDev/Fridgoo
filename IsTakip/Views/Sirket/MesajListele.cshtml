@@ -1,0 +1,67 @@
+﻿@using IsTakip.Models
+@model List<MesajViewModel>
+
+@{
+    ViewBag.Title = "MesajListele";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<h2 class="text-center">Gönderilmiş Mesajlar</h2>
+
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>#</th>
+            <th>Başlık</th>
+            <th>Mesaj</th>
+            <th>Gönderen</th>
+            <th>Tarih</th>
+            <th>Sil</th>
+            <th>Düzenle</th>
+            <th>Orijinal</th>
+            <th>Kime</th>
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.ID</td>
+                <td>@x.Header</td>
+                <td>@x.Context</td>
+                <td>@x.Sender</td>
+                <td>@x.SendTime</td>
+                <td>
+                    <a href="/Sirket/MesajSil/@x.ID" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Sil
+                    </a>
+                </td>
+                <td>
+                    <a href="/Sirket/MesajDuzenle/@x.ID" class="btn btn-warning">
+                        <i class="fas fa-pen"></i> Düzenle
+                    </a>
+                </td>
+                <td>
+                    @if (x.IsOriginal == Convert.ToBoolean(true))
+                    {
+                        <p>Düzenlenmemiş</p>
+                    }
+                    else
+                    {
+                        <p>Düzenlenmiş</p>
+                    }
+                </td>
+                <td>
+                    @if (x.PersonelAdi == null)
+                    {
+                        <p>Herkese</p>
+                    }
+                    else
+                    {
+                        <p>@x.PersonelAdi</p>
+                    }
+
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

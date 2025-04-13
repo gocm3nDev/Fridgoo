@@ -1,0 +1,34 @@
+﻿@model IsTakip.Models.TBL_PERSON
+
+@{
+    ViewBag.Title = "PersonelDuzenle";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<h2 class="text-center">Personeli Düzenle</h2>
+
+<div class="container">
+    <form method="post">
+        @Html.Label("Personel Adı-Soyadı")
+        @Html.TextBoxFor(x => x.personelAdSoyad, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Kullanıcı Adı")
+        @Html.TextBoxFor(x => x.personelUsername, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Şifresi")
+        @Html.TextBoxFor(x => x.personelPasswd, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Yetki")
+        <div class="form-check">
+            @Html.RadioButtonFor(x => x.personelYetkiID, 1, new { @class = "form-check-input", id = "yonetici" })
+            <label class="form-check-label" for="yonetici">Yönetici</label>
+        </div>
+        <div class="form-check">
+            @Html.RadioButtonFor(x => x.personelYetkiID, 2, new { @class = "form-check-input", id = "calisan"})
+            <label class="form-check-label" for="calisan">Çalışan</label>
+        </div>
+
+        <br />
+        <button type="submit" class="btn btn-success">Kaydet</button>
+    </form>
+</div>

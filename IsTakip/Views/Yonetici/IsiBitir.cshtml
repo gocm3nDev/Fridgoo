@@ -1,0 +1,40 @@
+﻿@model IsTakip.Models.TBL_ISLER
+
+@{
+    ViewBag.Title = "IsiBitir";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<br />
+<h2>İşi Tamamla</h2>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+
+    @Html.Label("Müşterinin Adı Soyadı")
+    @Html.TextBoxFor(x => x.musteriAdSoyad, new { @class = "form-control" })
+    <br />
+    @Html.Label("İşin Başlığı")
+    @Html.TextBoxFor(x => x.isinBasligi, new { @class = "form-control" })
+    <br />
+    @Html.Label("İşin Açıklaması")
+    @Html.TextBoxFor(x => x.isinAciklamasi, new { @class = "form-control" })
+    <br />
+    @Html.Label("Müşterinin Adresi")
+    @Html.TextBoxFor(x => x.musteriAdresi, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kullanılan Malzeme(ler)")
+    @Html.TextBoxFor(x => x.kullanilanMalzeme, new { @class = "form-control" })
+    <br />
+    @Html.Label("Malzeme Maliyet");
+    @Html.TextBoxFor(x => x.malzemeFiyat, new { @class = "form-control" })
+    <br />
+    @Html.Label("Toplam Fiyat")
+    @Html.TextBoxFor(x => x.totalFiyat, new { @class = "form-control" })
+    <br />
+    @Html.Label("Müşteri Telefon Numarası")
+    @Html.TextBoxFor(x => x.musteriTel, new { @class = "form-control" })
+    <br />
+    <button type="submit" class="btn btn-success">İşi Tamamla</button>
+</form> 
+<br />

@@ -1,0 +1,29 @@
+﻿@model IsTakip.Models.TBL_MESAJLAR
+
+@{
+    ViewBag.Title = "MesajDuzenle";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<br />
+<h2 class="text-center">Mesajı Düzenle</h2>
+<br />
+<br />
+
+<div class="container">
+    @using (Html.BeginForm("MesajDuzenle", "Sirket", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.LabelFor(x => x.Header, "Başlık")
+        @Html.TextBoxFor(x => x.Header, new { @class="form-control"})
+        <br />
+        @Html.LabelFor(x => x.Context, "Mesaj")
+        @Html.TextBoxFor(x => x.Context, new { @class = "form-control" })
+        <br />
+
+        <button type="submit" class="btn btn-success">Kaydet</button>
+
+        <p><i style="font-size:12px; user-select:none">Kaydet tuşuna basıldıktan sonra mesaj orjinalliğini kaybedecekdir.</i></p>
+        }
+    </div>

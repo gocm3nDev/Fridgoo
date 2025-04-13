@@ -1,0 +1,132 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model List<IsTakip.Models.PDFViewModel>
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fridgoo · Fatura</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            color: #333;
+        }
+
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .company-info,
+        .client-info {
+            margin-bottom: 20px;
+        }
+
+            .company-info h2,
+            .client-info h2 {
+                margin-bottom: 5px;
+            }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+            table th,
+            table td {
+                padding: 12px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+
+            table th {
+                background-color: #f2f2f2;
+            }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+            .total h3 {
+                margin: 5px 0;
+            }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        @foreach (var item in Model)
+        {
+
+            <h1>FATURA</h1>
+
+            <div class="details">
+                <div class="company-info">
+                    <h2>Fridgoo Teknik Servis</h2>
+                    <p>@item.musteriAdres<br />Telefon: @item.musteriTel</p>
+                </div>
+                <div class="client-info">
+                    <h2>Müşteri</h2>
+                    <p>@item.musteriAd<br />Tarih: @item.tarih</p>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün(ler)</th>
+                        <th>Ürün Fiyat</th>
+                        <th>Toplam</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@item.Urunler</td>
+                        <td>@item.urunFiyat ₺</td>
+                        <td>@item.totalFiyat ₺</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total">
+                <h3>Ara Toplam: @item.totalFiyat ₺</h3>
+                <h3>KDV (%18): @item.kdv ₺</h3>
+                <h2>Genel Toplam: @item.kdvFiyat ₺</h2>
+            </div>
+
+            <div class="footer">
+                Bu fatura bilgisayar tarafından oluşturulmuştur. İmza gerekmez.
+            </div>
+        }
+    </div>
+</body>
+
+</html>

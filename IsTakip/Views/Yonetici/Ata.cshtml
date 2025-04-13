@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Ata";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+@model IsTakip.Models.TBL_ISLER
+<br />
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+             @ViewBag.birim İçin İş Emri Oluştur
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Ata", "Yonetici", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <label for="musteriAdSoyad" class="form-label">Müşterinin Adı ve Soyadı</label>
+                    <input type="text" class="form-control" id="musteriAdSoyad" name="musteriAdSoyad" required>
+                </div><div class="mb-3">
+                    <label for="isinBasligi" class="form-label">İşin Başlığı</label>
+                    <input type="text" class="form-control" id="isinBasligi" name="isinBasligi" required>
+                </div><div class="mb-3">
+                    <label for="isinAciklamasi" class="form-label">İşin Açıklaması</label>
+                    <input type="text" class="form-control" id="isinAciklamasi" name="isinAciklamasi" required>
+                </div><div class="mb-3">
+                    <label for="musteriTel" class="form-label">Müşterinin Telefon Numarası</label>
+                    <input type="text" class="form-control" id="musteriTel" name="musteriTel" required>
+                </div><div class="mb-3">
+                    <label for="musteriAdresi" class="form-label">Müşterinin Adresi</label>
+                    <input type="text" class="form-control" id="musteriAdresi" name="musteriAdresi" required>
+                </div><label class="form-label">İşi İcra Edecek Olan Eleman</label>
+                <select class="form-select" name="selectPer" id="selectPer">
+                    @if (ViewBag.personel == null)
+                    {
+                        <p>Personel listesi bulunamadı</p>
+                    }
+                    else
+                    {
+                        foreach (var personel in ViewBag.personel)
+                        {
+                            <option value="@personel.ID">@personel.personelAdSoyad</option>
+
+                        }
+                    }
+                </select>
+                <br />
+                <button type="submit" class="btn btn-primary">Emri Ver</button>
+            }
+        </div>
+    </div>
+</div>
+<br />
